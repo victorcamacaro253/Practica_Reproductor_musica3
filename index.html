@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Reproductor de Musica</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+	<header>
+<div class="icon_menu">
+	<i class="fas fa-bars" id="btn_open"></i>
+	
+</div>
+</header>
+
+
+<div class="menu_side" id="menu_side">
+
+	<div class="name_page">
+		<i class="fa-brands fa-youtube"></i>
+		<h4>Victor Camacaro</h4>
+		
+	</div>
+
+	<div class="options_menu">
+
+		<a href="#" class="selected">
+			<div class="option">
+				<i class="fa fa-home" title="inicio"></i>
+				<h4>Inicio</h4>
+				
+			</div>
+			
+		</a>
+
+		<a href="#">
+			<div class="option">
+				<i class="far fa-file" title="Portafolio"></i>
+				<h4>Portafolio</h4>
+				
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="option">
+				<i class="fas fa-video" title="Cursos"></i>
+				<h4>Cursos</h4>
+				
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="option">
+				<i class="far fa-sticky-note" title="Blog"></i>
+				<h4>Blog</h4>
+				
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="option">
+				<i class="fa-solid fa-address-book"></i>
+				<h4>Contacto</h4>
+				
+			</div>
+		</a>
+
+		<a href="#">
+			<div class="option">
+				<i class="far fa-address-card"></i>
+				<h4>Nosotros</h4>
+				
+			</div>
+		</a>
+		
+	</div>
+	
+</div>
+
+
+	<div class="Reproductor">
+
+		<div class="wrapper">
+			<div class="detalles">
+				<div class="escuchando">Escuchando x de y</div>
+				<div class="imagen"></div>
+				<div class="nombre-cancion">Cancion</div>
+				<div class="artista">Artista</div>
+
+				
+			</div>
+
+
+			<div class="slider-container">
+				<div class="tiempo-actual">00:00</div>
+				<input type="range" min="1" max="100" value="0" class="buscar_slider" onchange="buscar()">
+				<div class="total_duracion">00:00</div>
+				
+			</div>
+
+			<div class="slider-container">
+				<i class="fa fa-volume-down"></i>
+				<input type="range" min="1" max="100" value="100" class="volumen_slider" onchange="setVolumen()">
+				<i class="fa fa-volume-up"></i>
+				
+			</div>
+
+			<div class="botones">
+				<div class="cancion-aleatoria" onclick="CancionAleatoria()">
+					<i class="fas fa-random fa-2x" title="Aleatorio"></i>
+				</div>
+				<div class="cancion-previa" onclick="cancion_previa()">
+					<i class="fa fa-step-backward fa-2x" title="Ir a atras"></i>
+				</div>
+
+				<div class="reproducirpausar" onclick="reproducirpausarcancion()" >
+					<i class="fa fa-play-circle fa-5x"></i>
+				</div>
+				<div class="siguiente-cancion" onclick="siguiente_cancion()" title="siguiente cancion">
+					<i class="fa fa-step-forward fa-2x"></i>
+					
+				</div>
+
+				<div class="repetir-cancion" onclick="repetir_cancion()" title="repetir cancion">
+					<i class="fa fa-repeat fa-2x" title=""></i>
+					
+				</div>
+				 
+			</div>
+
+
+              <div id="wave">
+              	
+
+              	<span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+              	
+              </div>
+
+
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
