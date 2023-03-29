@@ -90,6 +90,9 @@ const lista_musica = [
      	var angle='to right';
  let gradient = 'linear-gradient(' + angle + ',' + color1 + ', ' + color2 + ")";
     document.body.style.background = gradient;
+   /* document.header.style.background = gradient;*/
+  /* menu_side=document.getElementById("menu_side");
+   document.menu_side.style.background= gradient;*/
      }
 
      function resetear(){
